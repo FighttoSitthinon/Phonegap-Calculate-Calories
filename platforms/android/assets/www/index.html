@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" type="text/css" href="uilib/uilib/onsen/css/onsenui.css" />
+    <link rel="stylesheet" type="text/css" href="uilib/uilib/onsen/css/onsen-css-components.min.css" />
+    <script type="text/javascript" src="uilib/uilib/onsen/js/onsenui.min.js"></script>
+    <script type="text/javascript" src="uilib/uilib/onsen/js/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>Quiz1</title>
+</head>
+<body>
+    <ons-page style="padding:10px;">
+            <ons-toolbar style="background-color:#839788">
+                <div class="center" style="color:white;font-size:15px;">
+                    Calculate Calories
+                </div>
+            </ons-toolbar>
+        <ons-card class="center" style="margin-top:15px">
+            <div class="content">
+                <ons-list>
+                    <ons-list-header style="color:#3E5C76;font-size:15px;margin-top:10px"><b>Please input your detail</b></ons-list-header>
+                    <ons-list-item class="input-item">
+                        <div class="left" style="margin:5px;color:#3E5C76;">
+                            <span>Weight (kg) : </span>
+                        </div>
+                        <div class="center" style="width:80px">
+                             <ons-input id="weight" float type="number" placeholder="Input weight"></ons-input>   
+                        </div>
+                    </ons-list-item>
+                    <ons-list-item>
+                        <div class="left" style="margin:8px;color:#3E5C76;">
+                            <span> Sex : </span>
+                        </div>
+                        <ons-select id="sex">
+                            <option value="male">Males</option>
+                            <option value="female">Females</option>
+                        </ons-select>
+                    </ons-list-item>
+                    <ons-list-item>
+                        <div class="left" style="margin:8px;color:#3E5C76;">
+                            <span>Age : </span>
+                        </div>
+                        <ons-select id="age">
+                            <option value="3-9"> 3 to 9 years</option>
+                            <option value="10-17"> 10 to 17 years</option>
+                            <option value="18-29"> 18 to 29 years</option>
+                            <option value="30-60"> 30 to 60 years</option>
+                            <option value="60+"> over 60 years</option>
+                        </ons-select>
+                    </ons-list-item>
+                    <ons-list-item>
+                        <ons-button onclick="CalCalories()" modifier="large" style="margin-right:8px;background-color:#839788">
+                            Calculate Calories
+                        </ons-button>
+                    </ons-list-item>
+                </ons-list>
+            </div>
+        </ons-card>
+    </ons-page>
+</body>
+</html>
