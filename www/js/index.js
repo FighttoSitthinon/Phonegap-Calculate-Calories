@@ -1,4 +1,3 @@
-//fn = {};
 var CalCalories = function(){
     var weight = $("#weight").val();
     var sex = $("#sex").val();
